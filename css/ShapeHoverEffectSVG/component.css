@@ -106,7 +106,7 @@
 
 /* Hover effects */
 .grid a:hover svg path {
-	opacity: 0.85;
+	opacity: 1;
 }
 
 .grid a:hover figure img {

@@ -64,7 +64,7 @@
           </div>
           <p></p>
           <p></p>
-          <p class="subline">將滾輪向下滑動</p>
+          <p class="subline">Scroll Down</p>
         </div>
         <div class="bg-img"><img src="images/header.jpg" alt="Background Image" /></div>
       </header>
@@ -81,24 +81,23 @@
 
           <p class="title_name">台灣資料科學愛好者年會</p>
 
-          <div>
-            <hr class="large_hr"><br>
-            <div class="beautyCSS_banner">
-              <span>問卷說明</span>
-            </div>
-            <p align="left" style="margin:50px 100px; color:#000;">您好：<br>　　這份問卷目的為是調查 2014 台灣資料科學愛好者年會參加者對於年會活動的期望及建議，希望您能撥出五分鐘的時間填寫，您的寶貴建議將會成為本年會改進的參考依據。本問卷所有的資料將供主辦單位參考，不會有任何具身份可識別資料披露給第三方，請您安心填答，謝謝。</p>
-            <p align="right" style="margin:50px 100px; color:#000;">2014 台灣資料科學愛好者年會 工作小組 敬上</p>
-
-
-            <p style="margin:70px 100px; color:#944;">提示. 游標移動到講者相片即可看見議程說明，點擊相片方可選擇成功</p>
-          </div>
+          <p style="color:#000;">只需點擊講者圖像即可選擇成功</p>
 
           <form action="https://docs.google.com/forms/d/1DtQIedArbNToS0wgiHiuJcS4Ce-XXof1_x0ToYbQDuQ/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 
             <!-- Google form format refined -->
             <div class="google_form" style="display:none">
-              <!-- 短文字 - QRcode -->
-              <input name="entry.333528968" id="entry_333528968" type="text">
+              <!-- 短文字 - 您的大名 -->
+              <input name="entry.1091538490" id="entry_1091538490" type="text">
+              <!-- 單選題 - 您的性別 -->
+              <div>
+                <input name="entry.1701966832" id="group_1701966832_1" type="radio" value="男性">
+                <input name="entry.1701966832" id="group_1701966832_2" type="radio" value="女性">
+              </div>
+              <!-- 短文字 - 您的職稱 -->
+              <input name="entry.953912271" id="entry_953912271" type="text">
+              <!-- 短文字 - 您的信箱 -->
+              <input name="entry.1242787359" id="entry_1242787359" type="text">
               <!-- 多選題 - 最期待的演講議程 -->
               <div class="questionEntryA">
                 <input name="entry.455996751" id="group_455996751_1" type="checkbox" value="林智仁">
@@ -134,8 +133,6 @@
               <textarea name="entry.1356480946" id="entry_1356480946"></textarea> -->
               <!-- 長文字 - 期待有哪種紀念品
               <textarea name="entry.1799993292" id="entry_1799993292"></textarea> -->
-              <!-- 長文字 - 對於主辦單位及來年的資料科學愛好者年會有什麼樣的建議或期待？
-              <textarea name="entry.1245524621" id="entry_1245524621"></textarea> -->
             </div>
 
             <div>
@@ -150,97 +147,82 @@
               <ul id="da-thumbs" class="da-thumbs">
                 <li class="couple" num="1" onclick="SpeakerMarked(1, 9)">
                   <img src="images/speaker/09.jpg" />
-                  <p style="font-size:0.5em; line-height:6.5em;">&nbsp;</p>
+                  <p></p>
                   <img src="images/speaker/10.jpg" />
-                  <div class="name" title="資料科學在 Whoscall<br>產品體系中的角色"><span>郭建甫<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;高義銘</span></div>
+                  <div class="name" title="資料科學在 Whoscall<br>產品體系中的角色"><span>郭建甫<br>&nbsp;<br>高義銘</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">資料科學在 Whoscall<br>產品體系中的角色</p>
                 </li>
                 <li class="couple" num="2" onclick="SpeakerMarked(2, 14)">
                   <img src="images/speaker/15.jpg" />
-                  <p style="font-size:0.5em; line-height:6.65em;">&nbsp;</p>
+                  <p></p>
                   <img src="images/speaker/16.jpg" />
-                  <div class="name" title="天下武功唯快不破：利用串流資料實做出即時分類器和即時推薦系統"><span>黃孝文<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;林于聖</span></div>
+                  <div class="name" title="天下武功唯快不破：利用串流資料實做出即時分類器和即時推薦系統"><span>黃孝文<br>&nbsp;<br>林于聖</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:1.5em;">天下武功唯快不破：<br>利用串流資料實做出<br>即時分類器和即時推薦系統</p>
                 </li>
                 <li class="male" num="3" onclick="SpeakerMarked(3, 1)">
                   <img src="images/speaker/01.jpg" />
                   <div class="name" title="Big-data analytics: challenges<br>and opportunities"><span>林智仁</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:1.5em;">Big-data analytics:<br>challenges and<br>opportunities</p>
                 </li>
                 <li class="male" num="4" onclick="SpeakerMarked(4, 2)">
                   <img src="images/speaker/02.jpg" />
                   <div class="name" title="資料、社群、大協作 -<br>零時政府的數位革命"><span>高嘉良</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">資料、社群、大協作 -<br>零時政府的數位革命</p>
                 </li>
                 <li class="male" num="5" onclick="SpeakerMarked(5, 3)">
                   <img src="images/speaker/03.jpg" />
                   <div class="name" title="讓你 Z > B 的資料科學"><span>劉嘉凱</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:4.6em;">讓你 Z > B 的資料科學</p>
                 </li>
                 <li class="male" num="6" onclick="SpeakerMarked(6, 4)">
                   <img src="images/speaker/04.jpg" />
                   <div class="name" title="Collaboration with Statistician?"><span>陳君厚</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">Collaboration with<br>Statistician?</p>
                 </li>
                 <li class="male" num="7" onclick="SpeakerMarked(7, 5)">
                   <img src="images/speaker/05.jpg" />
                   <div class="name" title="行動廣告與大數據<br>資料分析策略與執行"><span>趙國仁</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">行動廣告與大數據<br>資料分析策略與執行</p>
                 </li>
                 <li class="female" num="8" onclick="SpeakerMarked(8, 6)">
                   <img src="images/speaker/06.jpg" />
                   <div class="name" title="健康資料分析與應用"><span>潘美連</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:4.6em;">健康資料分析與應用</p>
                 </li>
                 <li class="male" num="9" onclick="SpeakerMarked(9, 7)">
                   <img src="images/speaker/07.jpg" />
                   <div class="name" title="資料科學於預防醫學之應用"><span>劉家宏<br></span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:4.6em;">資料科學於預防醫學之應用</p>
                 </li>
                 <li class="male" num="10" onclick="SpeakerMarked(10, 8)">
                   <img src="images/speaker/08.jpg" />
                   <div class="name" title="野生動物喜歡住哪裡？<br>探討野生動物與棲地關係"><span>林大利</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:4.6em;">資料科學於預防醫學之應用</p>
                 </li>
                 <li class="male" num="11" onclick="SpeakerMarked(11, 10)">
                   <img src="images/speaker/11.jpg" />
                   <div class="name" title="天氣/氣候大數據的<br>應用與展望"><span>彭啟明</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">天氣/氣候大數據的<br>應用與展望</p>
                 </li>
                 <li class="male" num="12" onclick="SpeakerMarked(12, 11)">
                   <img src="images/speaker/12.jpg" />
                   <div class="name" title="一個賭徒的告白：<br>從預測市場看金融交易"><span>吳牧恩</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">一個賭徒的告白：<br>從預測市場看金融交易</p>
                 </li>
                 <li class="male" num="13" onclick="SpeakerMarked(13, 12)">
                   <img src="images/speaker/13.jpg" />
                   <div class="name" title="從 2013 社群網絡活動看<br>台灣社會發展趨勢"><span>呂俊宏</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">從 2013 社群網絡活動看<br>台灣社會發展趨勢</p>
                 </li>
                 <li class="male" num="14" onclick="SpeakerMarked(14, 13)">
                   <img src="images/speaker/14.jpg" />
                   <div class="name" title="從社群資料來看工人(群眾)智慧<br>與人工智慧的結合"><span>洪進吉</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">從社群資料來看工人(群眾)<br>智慧與人工智慧的結合</p>
                 </li>
                 <li class="male" num="15" onclick="SpeakerMarked(15, 15)">
                   <img src="images/speaker/17.jpg" />
                   <div class="name" title="讓數字說話：<br>資料的公益責信應用"><span>余孟勲</span></div>
                   <div><img class="splike" src="images/nonlike.png" /></div>
-                  <p class="sp_title" style="color:black; font-size:0.5em; line-height:2.3em;">讓數字說話：<br>資料的公益責信應用</p>
                 </li>
               </ul>
               <div class="speaker_title">
@@ -252,15 +234,10 @@
               function SpeakerMarked(nth, index) {
                 var smile = $('#da-thumbs li:nth-child(' + nth + ') .splike');
                 var background = $('#da-thumbs li:nth-child(' + nth + ')');
-                var title = $('#da-thumbs li:nth-child(' + nth + ') .sp_title');
                 // If no-smile, turn smile ; if smile, turn no-smile.
                 if (smile.attr('src') == "images/like.png") {
                   smile.attr('src', "images/nonlike.png");
-                  $(function () {
-                    background.css("background", "#FFF");
-                    background.animate({ backgroundColor: 'rgba(255, 255, 255, 0.5)' });
-                  });
-                  title.css("color", "black");
+                  background.css("background", "#FFF");
                   // Real changing checked value.
                   $(entryA + index).prop('checked', false);
                   // Assign for checking amount.
@@ -268,7 +245,6 @@
                 } else {
                   smile.attr("src", "images/like.png");
                   background.css("background", "url(images/speaker/selected.png)");
-                  title.css("color", "white");
                   // background.css("background", "list-style-position:inside; border:1px solid black;");
                   // Real changing checked value.
                   $(entryA + index).prop('checked', true);
@@ -290,7 +266,6 @@
               });
             </script>
             <script>
-              /*
               for (i = 1 ; i <= $('#da-thumbs li').length ; i++) {
                 $('#da-thumbs li:nth-child(' + i + ')').hover(function(it) {
                   var number = $(this).attr('num');
@@ -311,7 +286,6 @@
                   }
                 });
               }
-              */
               // Inintail the speakers' title banner.
               $(document).ready(function() {
                 $('.speaker_title').hide();
@@ -439,13 +413,11 @@
                 var smile = $('#course #grid a:nth-child(' + nth + ') .crlike');
                 var title = $('#course #grid a:nth-child(' + nth + ') h2');
                 var background = $('#course #grid a:nth-child(' + nth + ') figure');
-                var cover = $('#course #grid a:nth-child(' + nth + ') path');
                 // If no-smile, turn smile ; if smile, turn no-smile.
                 if (smile.attr('src') == "images/like.png") {
                   smile.attr('src', "images/nonlike.png");
                   title.css("color", "#1989FF");
                   background.css("background", "#222");
-                  cover.css("fill", "#000");
                   // Real changing checked value.
                   $(entryB + nth).prop('checked', false);
                   // Assign for checking amount.
@@ -454,7 +426,6 @@
                   smile.attr("src", "images/like.png");
                   title.css("color", "#F00");
                   background.css("background", "url(images/background/background_bottom.png)");
-                  cover.css("fill", "#555");
                   // Real changing checked value.
                   $(entryB + nth).prop('checked', true);
                   // Assign for checking amount.
@@ -523,17 +494,6 @@
 
             <hr class="large_hr">
 
-            <div>
-              <div class="beautyCSS_banner">
-                <span>⑧對於主辦單位及來年的資料科學愛好者年會<br>有什麼樣的建議或期待？</span>
-              </div>
-              <br>&nbsp;
-              <textarea name="entry.1245524621" id="entry_1245524621" onkeyup="autogrow(this);" placeholder="請於此處輸入文字..."></textarea>
-              <br>&nbsp;<br>&nbsp;
-            </div>
-
-            <hr class="large_hr">
-
             <!-- Ball animation -->
             <link rel="stylesheet" type="text/css" href="css/LoadingAnimations/style.css" />
             <ul class="bokeh"><li></li><li></li><li></li><li></li></ul>
@@ -583,7 +543,7 @@
               }
             </script>
             <br>&nbsp;
-            <a href="http://salmon.tw" target="_new" style="color:black; font-size:0.6em;">Designed by salmon.tw (Salmon).</a>
+            <a href="http://salmon.tw" style="color:black; font-size:0.6em;">Designed by salmon.tw (Salmon).</a>
           </form>
         </div>
 
