@@ -12,7 +12,7 @@
 .da-thumbs li {
 	float: left;
 	margin: 5px;
-	background: #FFF;
+	background: rgba(255,255,255,0.5);
 	padding: 8px;
 	position: relative;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -72,7 +72,7 @@
   	cursor: pointer;
 }
 .da-thumbs li.couple div img.splike {
-	top: 255px;
+	top: 345px;
 }
 .da-thumbs li div.dialog {
 	position: fixed;

@@ -41,12 +41,13 @@ var QueryString = function() {
 } ();
 console.log(QueryString);
 
-document.getElementById("entry_1091538490").value = decodeURIComponent(QueryString.name) ;
-$('#group_1701966832_' + ((decodeURIComponent(QueryString.gender) == "男性") ? 1 : 2)).prop('checked', true) ;
-document.getElementById("entry_953912271").value = decodeURIComponent(QueryString.title) ;
-document.getElementById("entry_1242787359").value = QueryString.mail ;
+document.getElementById("entry_333528968").value = QueryString.qrcode ;
+// document.getElementById("entry_1091538490").value = decodeURIComponent(QueryString.name) ;
+// $('#group_1701966832_' + ((decodeURIComponent(QueryString.gender) == "男性") ? 1 : 2)).prop('checked', true) ;
+// document.getElementById("entry_953912271").value = decodeURIComponent(QueryString.title) ;
+// document.getElementById("entry_1242787359").value = QueryString.mail ;
 
-if ( decodeURIComponent( QueryString.name ) == "undefined" ) {
+if ( decodeURIComponent( QueryString.qrcode ) == "undefined" ) {
   $('.subline').html("本表單無效，請使用郵件指定之網址") ;
   $('.main_article').css("display", "none") ;
 }
