@@ -10,6 +10,8 @@
 	padding: 0;
 }
 .da-thumbs li {
+	width: 170px;
+	height: 250px;
 	float: left;
 	margin: 5px;
 	background: rgba(255,255,255,0.5);
@@ -17,6 +19,20 @@
 	position: relative;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 	border-radius: 10px;
+}
+.da-thumbs li.couple {
+	height: 510px;
+}
+.sp_title, .sp_title2, .sp_title3 {
+	color: black;
+	font-size: 0.5em;
+	line-height: 4.9em;
+}
+.sp_title2 {
+	line-height: 2.5em;
+}
+.sp_title3 {
+	line-height: 1.8em;
 }
 .da-thumbs img {
 	width: 150px;
