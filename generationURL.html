@@ -11,15 +11,11 @@
   <head>
     <meta name="author" content="Salmon" />
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" src="js/jquery/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/csv/papaparse.min.js"></script>
     <!-- Encrypt -->
     <script type="text/javascript" src="js/encrypt/encrypt.js"></script>
-    <script type="text/javascript" src="qrcode.js"></script>
   </head>
 
   <body>
-    <p id="output"></p>
   </body>
 </html>
 
@@ -44,19 +40,15 @@
     bSide.counter.arr = bSide_backup.counter.arr ;
   }
 
-  // test for Salmon.
-  // http://twconf.data-sci.org/form_of_pre_conf/?wZjCXXeMaAy0fYyropGl
+  var name = "鮭魚葛格" ;
+  var gender = "男性" ;
+  var title = "海鷗" ;
+  var email = "grass.house@hotmail.com" ;
+  var message = "name=" + name + "&gender=" + gender + "&title=" + title + "&mail=" + email ;
 
-  for (i = 1 ; i < qrcode.length ; i++) {
-    var qrcode_row = qrcode[i][0] ;
-    var message = "qrcode=" + qrcode_row ;
-
-    InitEncryptKeyValue() ;
-    var cipherText = aSide.encrypt(escape(message)) ;
-    var plainText = bSide.decrypt(cipherText);
-    console.log("No. " + i + "/" + qrcode.length) ;
-    console.log("原始 url:  " + unescape(plainText)) ;
-    $("#output").html($("#output").html() + "<br>http://twconf.data-sci.org/form_of_pre_conf/?" + cipherText) ;
-    console.log("加密 url:  " + cipherText) ;
-  }
+  InitEncryptKeyValue() ;
+  var cipherText = aSide.encrypt(escape(message)) ;
+  var plainText = bSide.decrypt(cipherText);
+  console.log("原始 url:  " + unescape(plainText)) ;
+  console.log("加密 url:  " + cipherText) ;
 </script>
